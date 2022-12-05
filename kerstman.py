@@ -1,9 +1,9 @@
 # Sorry for the mishmash of Dutch and English; I can only sort of read Dutch!
 
 def KPS(file):
-    x,y = 0,0
-    dir = 0
-    dx,dy = 0,1
+    x,y = 0,0 # current position
+    dir = 0 # "North", though how he can face north while starting at the North Pole is perplexing...
+    dx,dy = 0,1 # current direction as step deltas
     sporen = set() # set of all footprint locations
 
     for line in open(file).readlines():
